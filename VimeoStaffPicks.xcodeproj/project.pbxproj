@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01BE53181B3DA61500A89EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BE53171B3DA61500A89EF1 /* main.m */; };
+		01BE531B1B3DA61500A89EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BE531A1B3DA61500A89EF1 /* AppDelegate.m */; };
+		01BE53241B3DA61500A89EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BE53221B3DA61500A89EF1 /* Main.storyboard */; };
+		01BE53261B3DA61500A89EF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01BE53251B3DA61500A89EF1 /* Images.xcassets */; };
+		01BE53291B3DA61500A89EF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01BE53271B3DA61500A89EF1 /* LaunchScreen.xib */; };
+		01BE53351B3DA61500A89EF1 /* VimeoStaffPicksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BE53341B3DA61500A89EF1 /* VimeoStaffPicksTests.m */; };
+		21657EE81C6FEC6100DAE77E /* StaffPicksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21657EE71C6FEC6100DAE77E /* StaffPicksTableViewController.m */; };
+		21657EEB1C6FECD700DAE77E /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21657EEA1C6FECD700DAE77E /* ConcurrentOperation.m */; };
+		21657EF21C7005E900DAE77E /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 21657EF11C7005E900DAE77E /* ImageCache.m */; };
+		21657EF81C70157B00DAE77E /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 21657EF71C70157B00DAE77E /* ImageDownloader.m */; };
+		21657EFE1C704EE800DAE77E /* StaffPickDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21657EFD1C704EE800DAE77E /* StaffPickDownloadOperation.m */; };
+		21657F001C70506400DAE77E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21657EFF1C70506400DAE77E /* UIKit.framework */; };
+		21657F021C70507000DAE77E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21657F011C70507000DAE77E /* CoreData.framework */; };
+		21657F041C70507900DAE77E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21657F031C70507900DAE77E /* Foundation.framework */; };
+		21657F081C7050CB00DAE77E /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21657F071C7050CB00DAE77E /* CoreDataManager.m */; };
+		21657F0D1C70525300DAE77E /* VimeoStaffPicks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21657F0B1C70525300DAE77E /* VimeoStaffPicks.xcdatamodeld */; };
+		218DE73F1C73DF8300609FE3 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218DE73E1C73DF8300609FE3 /* SafariServices.framework */; };
+		21CE96CC1C73EE6A009CDCE9 /* Video+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CE96C91C73EE6A009CDCE9 /* Video+CoreDataProperties.m */; };
+		21CE96CD1C73EE6A009CDCE9 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CE96CB1C73EE6A009CDCE9 /* Video.m */; };
+		21D1002F1C729F8600B150E6 /* StaffPicksTVC+FetchedDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D1002E1C729F8600B150E6 /* StaffPicksTVC+FetchedDelegate.m */; };
+		21D100321C72A1A000B150E6 /* StaffPickPersistOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D100311C72A1A000B150E6 /* StaffPickPersistOperation.m */; };
+		21D100361C72AD0E00B150E6 /* StaffPickVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D100351C72AD0E00B150E6 /* StaffPickVideoTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01BE532F1B3DA61500A89EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01BE530A1B3DA61500A89EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01BE53111B3DA61500A89EF1;
+			remoteInfo = VimeoStaffPicks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BE53121B3DA61500A89EF1 /* VimeoStaffPicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VimeoStaffPicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BE53161B3DA61500A89EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BE53171B3DA61500A89EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		01BE53191B3DA61500A89EF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		01BE531A1B3DA61500A89EF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		01BE53231B3DA61500A89EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01BE53251B3DA61500A89EF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		01BE53281B3DA61500A89EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		01BE532E1B3DA61500A89EF1 /* VimeoStaffPicks.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimeoStaffPicks.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BE53331B3DA61500A89EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BE53341B3DA61500A89EF1 /* VimeoStaffPicksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = VimeoStaffPicksTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21042F051C72B9D000517FC0 /* AssociatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AssociatedObject.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21657EE61C6FEC6100DAE77E /* StaffPicksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = StaffPicksTableViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21657EE71C6FEC6100DAE77E /* StaffPicksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StaffPicksTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21657EE91C6FECD700DAE77E /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ConcurrentOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21657EEA1C6FECD700DAE77E /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ConcurrentOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21657EF01C7005E900DAE77E /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ImageCache.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21657EF11C7005E900DAE77E /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageCache.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21657EF61C70157B00DAE77E /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ImageDownloader.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21657EF71C70157B00DAE77E /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageDownloader.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21657EFC1C704EE800DAE77E /* StaffPickDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = StaffPickDownloadOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21657EFD1C704EE800DAE77E /* StaffPickDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StaffPickDownloadOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21657EFF1C70506400DAE77E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21657F011C70507000DAE77E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		21657F031C70507900DAE77E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21657F061C7050CB00DAE77E /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CoreDataManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21657F071C7050CB00DAE77E /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CoreDataManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21657F0A1C70515500DAE77E /* VimeoStaffPicks.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VimeoStaffPicks.pch; sourceTree = "<group>"; };
+		21657F0C1C70525300DAE77E /* VimeoStaffPicks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VimeoStaffPicks.xcdatamodel; sourceTree = "<group>"; };
+		218DE73E1C73DF8300609FE3 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		21CE96C81C73EE6A009CDCE9 /* Video+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "Video+CoreDataProperties.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21CE96C91C73EE6A009CDCE9 /* Video+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Video+CoreDataProperties.m"; sourceTree = "<group>"; };
+		21CE96CA1C73EE6A009CDCE9 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		21CE96CB1C73EE6A009CDCE9 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		21D1002D1C729F8600B150E6 /* StaffPicksTVC+FetchedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "StaffPicksTVC+FetchedDelegate.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21D1002E1C729F8600B150E6 /* StaffPicksTVC+FetchedDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "StaffPicksTVC+FetchedDelegate.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21D100301C72A1A000B150E6 /* StaffPickPersistOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = StaffPickPersistOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21D100311C72A1A000B150E6 /* StaffPickPersistOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StaffPickPersistOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		21D100341C72AD0E00B150E6 /* StaffPickVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = StaffPickVideoTableViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		21D100351C72AD0E00B150E6 /* StaffPickVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = StaffPickVideoTableViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01BE530F1B3DA61500A89EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				218DE73F1C73DF8300609FE3 /* SafariServices.framework in Frameworks */,
+				21657F041C70507900DAE77E /* Foundation.framework in Frameworks */,
+				21657F021C70507000DAE77E /* CoreData.framework in Frameworks */,
+				21657F001C70506400DAE77E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BE532B1B3DA61500A89EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01BE53091B3DA61400A89EF1 = {
+			isa = PBXGroup;
+			children = (
+				01BE53141B3DA61500A89EF1 /* VimeoStaffPicks */,
+				01BE53311B3DA61500A89EF1 /* VimeoStaffPicksTests */,
+				01BE53131B3DA61500A89EF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01BE53131B3DA61500A89EF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01BE53121B3DA61500A89EF1 /* VimeoStaffPicks.app */,
+				01BE532E1B3DA61500A89EF1 /* VimeoStaffPicks.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01BE53141B3DA61500A89EF1 /* VimeoStaffPicks */ = {
+			isa = PBXGroup;
+			children = (
+				01BE53191B3DA61500A89EF1 /* AppDelegate.h */,
+				01BE531A1B3DA61500A89EF1 /* AppDelegate.m */,
+				21CE96C71C73EB92009CDCE9 /* View Controllers */,
+				21D100331C72A20F00B150E6 /* Categories */,
+				21657F091C7050D300DAE77E /* Persistence */,
+				21657EEC1C6FED4200DAE77E /* Services */,
+				01BE53221B3DA61500A89EF1 /* Main.storyboard */,
+				01BE53251B3DA61500A89EF1 /* Images.xcassets */,
+				01BE53271B3DA61500A89EF1 /* LaunchScreen.xib */,
+				21657F051C70508800DAE77E /* Frameworks */,
+				01BE53151B3DA61500A89EF1 /* Supporting Files */,
+			);
+			name = VimeoStaffPicks;
+			path = VimeoStaffPicks;
+			sourceTree = "<group>";
+		};
+		01BE53151B3DA61500A89EF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01BE53161B3DA61500A89EF1 /* Info.plist */,
+				01BE53171B3DA61500A89EF1 /* main.m */,
+				21657F0A1C70515500DAE77E /* VimeoStaffPicks.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01BE53311B3DA61500A89EF1 /* VimeoStaffPicksTests */ = {
+			isa = PBXGroup;
+			children = (
+				01BE53341B3DA61500A89EF1 /* VimeoStaffPicksTests.m */,
+				01BE53321B3DA61500A89EF1 /* Supporting Files */,
+			);
+			path = VimeoStaffPicksTests;
+			sourceTree = "<group>";
+		};
+		01BE53321B3DA61500A89EF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01BE53331B3DA61500A89EF1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21657EEC1C6FED4200DAE77E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21657EF01C7005E900DAE77E /* ImageCache.h */,
+				21657EF11C7005E900DAE77E /* ImageCache.m */,
+				21657EF61C70157B00DAE77E /* ImageDownloader.h */,
+				21657EF71C70157B00DAE77E /* ImageDownloader.m */,
+				21657EE91C6FECD700DAE77E /* ConcurrentOperation.h */,
+				21657EEA1C6FECD700DAE77E /* ConcurrentOperation.m */,
+				21657EFC1C704EE800DAE77E /* StaffPickDownloadOperation.h */,
+				21657EFD1C704EE800DAE77E /* StaffPickDownloadOperation.m */,
+				21D100301C72A1A000B150E6 /* StaffPickPersistOperation.h */,
+				21D100311C72A1A000B150E6 /* StaffPickPersistOperation.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		21657F051C70508800DAE77E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				218DE73E1C73DF8300609FE3 /* SafariServices.framework */,
+				21657F031C70507900DAE77E /* Foundation.framework */,
+				21657F011C70507000DAE77E /* CoreData.framework */,
+				21657EFF1C70506400DAE77E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21657F091C7050D300DAE77E /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				21CE96C81C73EE6A009CDCE9 /* Video+CoreDataProperties.h */,
+				21CE96C91C73EE6A009CDCE9 /* Video+CoreDataProperties.m */,
+				21CE96CA1C73EE6A009CDCE9 /* Video.h */,
+				21CE96CB1C73EE6A009CDCE9 /* Video.m */,
+				21657F061C7050CB00DAE77E /* CoreDataManager.h */,
+				21657F071C7050CB00DAE77E /* CoreDataManager.m */,
+				21657F0B1C70525300DAE77E /* VimeoStaffPicks.xcdatamodeld */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		21CE96C71C73EB92009CDCE9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21657EE61C6FEC6100DAE77E /* StaffPicksTableViewController.h */,
+				21657EE71C6FEC6100DAE77E /* StaffPicksTableViewController.m */,
+				21D100341C72AD0E00B150E6 /* StaffPickVideoTableViewCell.h */,
+				21D100351C72AD0E00B150E6 /* StaffPickVideoTableViewCell.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		21D100331C72A20F00B150E6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				21D1002D1C729F8600B150E6 /* StaffPicksTVC+FetchedDelegate.h */,
+				21D1002E1C729F8600B150E6 /* StaffPicksTVC+FetchedDelegate.m */,
+				21042F051C72B9D000517FC0 /* AssociatedObject.h */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01BE53111B3DA61500A89EF1 /* VimeoStaffPicks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BE53381B3DA61500A89EF1 /* Build configuration list for PBXNativeTarget "VimeoStaffPicks" */;
+			buildPhases = (
+				01BE530E1B3DA61500A89EF1 /* Sources */,
+				01BE530F1B3DA61500A89EF1 /* Frameworks */,
+				01BE53101B3DA61500A89EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VimeoStaffPicks;
+			productName = VimeoStaffPicks;
+			productReference = 01BE53121B3DA61500A89EF1 /* VimeoStaffPicks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01BE532D1B3DA61500A89EF1 /* VimeoStaffPicksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BE533B1B3DA61500A89EF1 /* Build configuration list for PBXNativeTarget "VimeoStaffPicksTests" */;
+			buildPhases = (
+				01BE532A1B3DA61500A89EF1 /* Sources */,
+				01BE532B1B3DA61500A89EF1 /* Frameworks */,
+				01BE532C1B3DA61500A89EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BE53301B3DA61500A89EF1 /* PBXTargetDependency */,
+			);
+			name = VimeoStaffPicksTests;
+			productName = VimeoStaffPicksTests;
+			productReference = 01BE532E1B3DA61500A89EF1 /* VimeoStaffPicks.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01BE530A1B3DA61500A89EF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Vimeo;
+				TargetAttributes = {
+					01BE53111B3DA61500A89EF1 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					01BE532D1B3DA61500A89EF1 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 01BE53111B3DA61500A89EF1;
+					};
+				};
+			};
+			buildConfigurationList = 01BE530D1B3DA61500A89EF1 /* Build configuration list for PBXProject "VimeoStaffPicks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01BE53091B3DA61400A89EF1;
+			productRefGroup = 01BE53131B3DA61500A89EF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01BE53111B3DA61500A89EF1 /* VimeoStaffPicks */,
+				01BE532D1B3DA61500A89EF1 /* VimeoStaffPicksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01BE53101B3DA61500A89EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BE53241B3DA61500A89EF1 /* Main.storyboard in Resources */,
+				01BE53291B3DA61500A89EF1 /* LaunchScreen.xib in Resources */,
+				01BE53261B3DA61500A89EF1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BE532C1B3DA61500A89EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01BE530E1B3DA61500A89EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D100361C72AD0E00B150E6 /* StaffPickVideoTableViewCell.m in Sources */,
+				21657EEB1C6FECD700DAE77E /* ConcurrentOperation.m in Sources */,
+				21657F0D1C70525300DAE77E /* VimeoStaffPicks.xcdatamodeld in Sources */,
+				01BE531B1B3DA61500A89EF1 /* AppDelegate.m in Sources */,
+				21657F081C7050CB00DAE77E /* CoreDataManager.m in Sources */,
+				21657EFE1C704EE800DAE77E /* StaffPickDownloadOperation.m in Sources */,
+				21D100321C72A1A000B150E6 /* StaffPickPersistOperation.m in Sources */,
+				01BE53181B3DA61500A89EF1 /* main.m in Sources */,
+				21657EF21C7005E900DAE77E /* ImageCache.m in Sources */,
+				21CE96CC1C73EE6A009CDCE9 /* Video+CoreDataProperties.m in Sources */,
+				21657EF81C70157B00DAE77E /* ImageDownloader.m in Sources */,
+				21D1002F1C729F8600B150E6 /* StaffPicksTVC+FetchedDelegate.m in Sources */,
+				21657EE81C6FEC6100DAE77E /* StaffPicksTableViewController.m in Sources */,
+				21CE96CD1C73EE6A009CDCE9 /* Video.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BE532A1B3DA61500A89EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BE53351B3DA61500A89EF1 /* VimeoStaffPicksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01BE53301B3DA61500A89EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01BE53111B3DA61500A89EF1 /* VimeoStaffPicks */;
+			targetProxy = 01BE532F1B3DA61500A89EF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01BE53221B3DA61500A89EF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BE53231B3DA61500A89EF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01BE53271B3DA61500A89EF1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01BE53281B3DA61500A89EF1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01BE53361B3DA61500A89EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01BE53371B3DA61500A89EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01BE53391B3DA61500A89EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = VimeoStaffPicks/VimeoStaffPicks.pch;
+				INFOPLIST_FILE = VimeoStaffPicks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VimeoStaffPicks;
+			};
+			name = Debug;
+		};
+		01BE533A1B3DA61500A89EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = VimeoStaffPicks/VimeoStaffPicks.pch;
+				INFOPLIST_FILE = VimeoStaffPicks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VimeoStaffPicks;
+			};
+			name = Release;
+		};
+		01BE533C1B3DA61500A89EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VimeoStaffPicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VimeoStaffPicks;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VimeoStaffPicks.app/VimeoStaffPicks";
+			};
+			name = Debug;
+		};
+		01BE533D1B3DA61500A89EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VimeoStaffPicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vimeo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = VimeoStaffPicks;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VimeoStaffPicks.app/VimeoStaffPicks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01BE530D1B3DA61500A89EF1 /* Build configuration list for PBXProject "VimeoStaffPicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BE53361B3DA61500A89EF1 /* Debug */,
+				01BE53371B3DA61500A89EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BE53381B3DA61500A89EF1 /* Build configuration list for PBXNativeTarget "VimeoStaffPicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BE53391B3DA61500A89EF1 /* Debug */,
+				01BE533A1B3DA61500A89EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BE533B1B3DA61500A89EF1 /* Build configuration list for PBXNativeTarget "VimeoStaffPicksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BE533C1B3DA61500A89EF1 /* Debug */,
+				01BE533D1B3DA61500A89EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21657F0B1C70525300DAE77E /* VimeoStaffPicks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21657F0C1C70525300DAE77E /* VimeoStaffPicks.xcdatamodel */,
+			);
+			currentVersion = 21657F0C1C70525300DAE77E /* VimeoStaffPicks.xcdatamodel */;
+			path = VimeoStaffPicks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 01BE530A1B3DA61500A89EF1 /* Project object */;
+}
